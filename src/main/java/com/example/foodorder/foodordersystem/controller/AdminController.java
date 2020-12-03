@@ -1,7 +1,6 @@
 package com.example.foodorder.foodordersystem.controller;
 
 import com.example.foodorder.foodordersystem.models.Admin;
-import com.example.foodorder.foodordersystem.models.Customer;
 import com.example.foodorder.foodordersystem.repository.AdminRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
