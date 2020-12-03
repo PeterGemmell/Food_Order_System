@@ -1,4 +1,7 @@
 package com.example.foodorder.foodordersystem.repository;
 
-public interface GuestRepository {
+import com.example.foodorder.foodordersystem.models.Guest;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface GuestRepository extends JpaRepository<Guest, Long> {
 }
