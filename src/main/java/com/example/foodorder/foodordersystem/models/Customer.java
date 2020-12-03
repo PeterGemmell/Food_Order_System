@@ -3,6 +3,7 @@ package com.example.foodorder.foodordersystem.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -38,16 +39,18 @@ public class Customer {
         this.phoneNumber = phoneNumber;
         this.cart = cart;
         this.payment = payment;
+        this.products = new ArrayList<Product>();
 
     }
 
-    public Customer(){
+    public Customer(String peter_gemmell, String s, int i){
 
     }
 
     public Long getId() {
         return id;
     }
+
 
     public void setId(Long id) {
         this.id = id;
