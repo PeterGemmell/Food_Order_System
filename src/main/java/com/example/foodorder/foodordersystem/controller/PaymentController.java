@@ -25,7 +25,7 @@ public class PaymentController {
         return new ResponseEntity<>(paymentRepository.findById(id), HttpStatus.OK);
     }
 
-    @GetMapping(value = "/payments/login")
+    @GetMapping(value = "/payments/search")
     public ResponseEntity findByCustomerRef(
             @RequestParam(name = "customerRef") String customerRef){
         return new ResponseEntity(paymentRepository.findByCustomerRef(customerRef), HttpStatus.OK);
